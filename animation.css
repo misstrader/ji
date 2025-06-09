@@ -1,0 +1,69 @@
+/* انیمیشن‌های اصلی */
+@keyframes glow-pulse {
+    0% { opacity: 0.1; }
+    100% { opacity: 0.3; }
+}
+
+@keyframes glitch-1 {
+    0% { clip: rect(24px, 9999px, 90px, 0); }
+    20% { clip: rect(65px, 9999px, 119px, 0); }
+    40% { clip: rect(76px, 9999px, 91px, 0); }
+    60% { clip: rect(38px, 9999px, 66px, 0); }
+    80% { clip: rect(15px, 9999px, 98px, 0); }
+    100% { clip: rect(82px, 9999px, 115px, 0); }
+}
+
+@keyframes glitch-2 {
+    0% { clip: rect(85px, 9999px, 120px, 0); }
+    20% { clip: rect(42px, 9999px, 65px, 0); }
+    40% { clip: rect(108px, 9999px, 90px, 0); }
+    60% { clip: rect(25px, 9999px, 99px, 0); }
+    80% { clip: rect(5px, 9999px, 58px, 0); }
+    100% { clip: rect(70px, 9999px, 84px, 0); }
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+/* انیمیشن کارت‌ها */
+.tilt {
+    transition: transform 0.5s ease;
+}
+
+.tilt:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg) scale(1.05);
+}
+
+/* انیمیشن تایپ رایتر */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.typewriter p {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end);
+}
+
+/* انیمیشن مورف برای آیکون‌های اجتماعی */
+.morph {
+    transition: transform 0.3s ease;
+}
+
+.morph:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* ادامه فایل انیمیشن‌ها... */
